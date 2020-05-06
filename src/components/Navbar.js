@@ -79,7 +79,7 @@ const Navbar = () => {
                     {menuItems.map((listItem, key) => (
                         <ListItem button key={key}>
                             <ListItemIcon className={classes.listItem}>{listItem.listIcon}</ListItemIcon>
-                            <ListItemText primary={listItem.listText}/>
+                            <ListItemText className={classes.listItem} primary={listItem.listText} />
                         </ListItem>
                     ))}
                 </List>
